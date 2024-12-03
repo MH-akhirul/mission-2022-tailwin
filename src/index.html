@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
  <header>
     <section class="container mx-auto grid grid-cols-2 mb-10">
-        <div class="my-auto mx-auto ">
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="my-auto mx-auto ">
             <div class="border-s-4 border-yellow-500  p-3">
                 <h1 class="text-6xl font-bold">Stay Focused on <br> 
                     
@@ -22,7 +24,9 @@
 
                  <p>Scroll down to explore more about us</p>
         </div>
-        <div>
+        <div  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <img src="../images/person/person-2.png" alt="">
         </div>
     </section>
@@ -34,7 +38,9 @@
         <h1>My Mission in <span class="text-yellow-500">2024</span></h1>
         </div>
         <div class="container mx-auto grid grid-cols-3 gap-4 mb-20">     
-            <div class="bg-slate-300 rounded-lg hover:bg-green-500">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="bg-slate-300 rounded-lg hover:bg-green-500">
                 <div class="p-7">
                     <img class="w-1/2" src="../images/illustrators/illustrator-1.png" alt="">
                 
@@ -43,7 +49,9 @@
                      Velit officia consequat duis enim velit mollit.</p>
             </div>
         </div>
-            <div class="bg-red-200 rounded-lg hover:bg-amber-300">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="bg-red-200 rounded-lg hover:bg-amber-300">
                 <div class="p-7">
                     <img class="w-1/2" src="../images/illustrators/illustrator-2.png" alt="">
                 
@@ -52,7 +60,9 @@
                      Velit officia consequat duis enim velit mollit.</p>
             </div>
         </div>
-            <div class="bg-lime-200 rounded-lg hover:bg-sky-400">
+            <div data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="bg-lime-200 rounded-lg hover:bg-sky-400">
                 <div class="p-7">
                     <img class="w-1/2" src="../images/illustrators/illustrator-3.png" alt="">
                 
@@ -68,7 +78,9 @@
 
 <section >
     <div class=" container mx-auto flex mb-10">
-        <div class="w-4/6">
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="w-4/6">
             <img src="../images/pictures/coding.png" alt="">
         </div>
         <div class="ml-16 my-auto">
@@ -87,7 +99,9 @@
  <!-- #################################################### -->
  <section>
     <div class=" container mx-auto flex flex-row-reverse mb-10">
-        <div class="w-4/6">
+        <div data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="w-4/6">
             <img src="../images/pictures/project.png" alt="">
         </div>
         <div class="ml-16 my-auto">
@@ -111,7 +125,9 @@
     <h1 class="text-4xl font-bold text-center my-16">Build <span class="text-yellow-500">Corona Application</span></h1>
 
 
-    <div class=" container mx-auto flex mb-10">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" class=" container mx-auto flex mb-10">
         <div class="w-4/6 ">
             <img src="../images/pictures/app.png" alt="">
         </div>
@@ -132,13 +148,20 @@
 <!--Build corona Applicatcon end  -->
 <!-- ################################### -->
  </main>
- <footer class="bg-slate-900 container mx-auto ">
-    <h1 class="text-3xl font-thin font-bold text-white text-center p-10">Mission<span class="text-red-600">2024</span></h1>
-    <p class="text-center text-white pb-10">Hard work, Perseverance, and Determination for 2022</p>
-
-
-
+ <footer class="bg-slate-900 ">
+    <section class="container mx-auto">
+        <h1 class="text-3xl font-thin font-bold text-white text-center p-10">Mission<span class="text-red-600">2024</span></h1>
+        <p class="text-center text-white pb-10">Hard work, Perseverance, and Determination for 2022</p>
+    </section>
  </footer>
 
+
+
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <script>
+    AOS.init();
+  </script>
 </body>
 </html>
